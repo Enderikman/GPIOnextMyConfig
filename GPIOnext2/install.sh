@@ -89,7 +89,7 @@ read -p $'\e[35m\e[4mWould you like to run the configuration manager now?\e[0m [
 
 #if yes, run gpionext config
 if [[ ! -z $(echo ${USER_INPUT} | grep -i y) ]]; then
-  sudo python3 $SCRIPTPATH/config_manager.py
+  sudo python3 $SCRIPTPATH/config_manager2.py
   echo "-------------> Setup Complete!"
 fi
 #Start GPIOnext2
