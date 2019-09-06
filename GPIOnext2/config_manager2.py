@@ -133,7 +133,7 @@ class ConfigurationManager:
 		# If in main menu and user selects 'Exit'
 		if currentDevice == None:
 			gpio.cleanup()
-			print("Type: 'gpionext start' to run the daemon") 
+			print("Type: 'gpionext2 start' to run the daemon")
 			sys.exit(0)
 
 		if currentDevice['name'] == 'Keyboard':

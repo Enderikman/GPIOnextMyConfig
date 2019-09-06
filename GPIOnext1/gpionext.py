@@ -59,7 +59,7 @@ class GPIOnext:
 
 	def reload (self, signal, frame):
 		self.DEBUG( addSeparator = True )
-		self.DEBUG( "Received Reload Signal. Reloading GPIOnext!" )
+		self.DEBUG( "Received Reload Signal. Reloading GPIOnext1!" )
 		self.DEBUG( addSeparator = True )
 		gpio.cleanup()
 		importlib.reload( gpio )

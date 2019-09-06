@@ -27,12 +27,12 @@ echo
 rm -r /etc/udev/rules.d/10-gpionext.rules
 
 #remove GPIOnext from systemd
-systemctl stop gpionext
-systemctl disable gpionext
-rm /lib/systemd/system/gpionext.service
+systemctl stop gpionext1
+systemctl disable gpionext1
+rm /lib/systemd/system/gpionext1.service
 
 #remove bash commands
-rm /usr/bin/gpionext
+rm /usr/bin/gpionext1
 
 file1="/etc/rc.local"
 file2="/home/pi/.profile"

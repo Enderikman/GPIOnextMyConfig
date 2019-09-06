@@ -24,15 +24,15 @@ echo "Removing Dependencies..."
 echo
 
 #remove udev rules
-rm -r /etc/udev/rules.d/10-gpionext.rules
+rm -r /etc/udev/rules.d/10-gpionext2.rules
 
 #remove GPIOnext from systemd
-systemctl stop gpionext
-systemctl disable gpionext
-rm /lib/systemd/system/gpionext.service
+systemctl stop gpionext2
+systemctl disable gpionext2
+rm /lib/systemd/system/gpionext2.service
 
 #remove bash commands
-rm /usr/bin/gpionext
+rm /usr/bin/gpionext2
 
 file1="/etc/rc.local"
 file2="/home/pi/.profile"

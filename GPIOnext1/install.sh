@@ -41,7 +41,7 @@ sudo pip3 install evdev
 # add gpionext1.service to systemd
 file1=$SCRIPTPATH"/gpionext1.service"
 cp $file1 /lib/systemd/system/
-original='WorkingDirectory=/home/pi/gpionext1'
+original='WorkingDirectory=/home/pi/gpionextmyconfig/gpionext1'
 sed -i 's#'$original'#WorkingDirectory='$SCRIPTPATH'#g' /lib/systemd/system/gpionext1.service
 systemctl enable gpionext1
 

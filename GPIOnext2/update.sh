@@ -29,12 +29,12 @@ fi
 shopt -u nocasematch
 
 # create bash custom commands
-cp $SCRIPTPATH"/usr-bin-gpionext" /usr/bin/gpionext
-config="CONFIG_PATH=${SCRIPTPATH}/config_manager.py"
-sed -i '1s#^#'$config'\n#g' /usr/bin/gpionext
-chmod 777 /usr/bin/gpionext
+cp $SCRIPTPATH"/usr-bin-gpionext2" /usr/bin/gpionext2
+config="CONFIG_PATH=${SCRIPTPATH}/config_manager2.py"
+sed -i '1s#^#'$config'\n#g' /usr/bin/gpionext2
+chmod 777 /usr/bin/gpionext2
 
-sudo systemctl stop gpionext
+sudo systemctl stop gpionext2
 sudo systemctl daemon-reload
-sudo systemctl start gpionext
-echo 'update complete'
+sudo systemctl start gpionext2
+echo 'update complete 2 '

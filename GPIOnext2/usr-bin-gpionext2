@@ -32,7 +32,7 @@ sudo python3 $CONFIG_PATH "${@:2}"
 ;;
 
 "DISABLE")
-sudo systemctl disable gpionext
+sudo systemctl disable gpionext2
 ;;
 
 "RELOAD")
