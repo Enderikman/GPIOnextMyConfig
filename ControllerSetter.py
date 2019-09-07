@@ -18,11 +18,13 @@ try:
   while True:
   	if GPIO.input(18) == True:
   		if switchmode == 0:
-		    os.system('gpionext1 stop')
+		    	os.system('gpionext1 stop')
 			os.system('gpionext2 start')
+			switchMode = 1
 		else:
 			os.system('gpionext2 stop')
 			os.system('gpionext1 start')
+			switchMode = 0
 	time.sleep(0.07)
 except KeyboardInterrupt:
   GPIO.cleanup() 
