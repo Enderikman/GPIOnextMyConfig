@@ -23,7 +23,7 @@ try:
 		else:
 			os.system('gpionext2 stop')
 			os.system('gpionext1 start')
-		time.sleep(0.07)
+	time.sleep(0.07)
 except KeyboardInterrupt:
   GPIO.cleanup() 
 
